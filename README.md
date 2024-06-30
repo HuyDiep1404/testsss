@@ -77,17 +77,19 @@ Provide a unique identifier, such as redshift-cluster-1, and choose the Free tri
 
 ### Database configurations.
 - A few fields will be already filled up by default. Ensure to have to the following values:
-    Field	                    Value
-    Database name	            dev
-    Database port	            5439
-    Master user name	        awsuser
-    Master user password	    Enter a password of your choice
+
+        Field	                    Value
+        Database name	            dev
+        Database port	            5439
+        Master user name	        awsuser
+        Master user password	    Enter a password of your choice
 
 - Cluster permissions (optional)
 We will Choose the IAM role created earlier, RedshiftRole, from the drop-down and click on the Associate IAM role button.
 
 Additional configurations
 Toggle the button to turn off the "use defaults" feature, and expand the Network and security section. Choose the following values:
+
     Field	                            Value
     Virtual private cloud (VPC)	        Default VPC
                                         If you are not able to view/select the default VPC,
