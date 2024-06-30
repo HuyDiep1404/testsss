@@ -57,12 +57,12 @@ start_time, hour, day, week, month, year, weekday
 
 In the Inbound rules section, click on Add Rule and enter the following values:
 
-    + Field	                    Value
-+ Type	                    Custom TCP Rule
-+ Protocol	                TCP
-+ Port range	            5439 The default port for Amazon Redshift is 5439, but your port might be different.
-+ Source type	            Custom
-+ Source	                0.0.0.0/0 (Anywhere in the world)
+    Field	                Value
+    Type	                Custom TCP Rule
+    Protocol	            TCP
+    Port range	            5439 The default port for Amazon Redshift is 5439, but your port might be different.
+    Source type	            Custom
+    Source	                0.0.0.0/0 (Anywhere in the world)
 
 Outbound rules allow traffic to anywhere by default.
 
@@ -77,29 +77,29 @@ Provide a unique identifier, such as redshift-cluster-1, and choose the Free tri
 
 ### Database configurations.
 - A few fields will be already filled up by default. Ensure to have to the following values:
-+ Field	                    Value
-+ Database name	            dev
-+ Database port	            5439
-+ Master user name	        awsuser
-+ Master user password	    Enter a password of your choice
+    Field	                    Value
+    Database name	            dev
+    Database port	            5439
+    Master user name	        awsuser
+    Master user password	    Enter a password of your choice
 
 - Cluster permissions (optional)
 We will Choose the IAM role created earlier, RedshiftRole, from the drop-down and click on the Associate IAM role button.
 
 Additional configurations
 Toggle the button to turn off the "use defaults" feature, and expand the Network and security section. Choose the following values:
-+ Field	                            Value
-+ Virtual private cloud (VPC)	    Default VPC
-                                    If you are not able to view/select the default VPC,
-                                    refer to the resolution given here.
-                                    You will have to create a cluster subnet group.
-+ VPC security groups	                Choose the redshift_security_group created earlier.
+    Field	                            Value
+    Virtual private cloud (VPC)	        Default VPC
+                                        If you are not able to view/select the default VPC,
+                                        refer to the resolution given here.
+                                        You will have to create a cluster subnet group.
+    VPC security groups	                Choose the redshift_security_group created earlier.
 
-+ Cluster subnet group	            Choose the default
-                                    It is the one you have just created.
-+ Availability Zone	                No preference
-+ Enhanced VPC routing	            Disabled
-+ Publicly accessible	            Enable
+    Cluster subnet group	            Choose the default
+                                        It is the one you have just created.
+    Availability Zone	                No preference
+    Enhanced VPC routing	            Disabled
+    Publicly accessible	                Enable
 
 Leave the rest of the values as default.
 click on the Create cluster button at the bottom.
