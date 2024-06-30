@@ -91,7 +91,7 @@ Additional configurations
 Toggle the button to turn off the "use defaults" feature, and expand the Network and security section. Choose the following values:
 
     Field	                            Value
-    Virtual private cloud (VPC)	        Default VPC
+    Virtual private cloud (VPC)	    Default VPC
                                         If you are not able to view/select the default VPC,
                                         refer to the resolution given here.
                                         You will have to create a cluster subnet group.
