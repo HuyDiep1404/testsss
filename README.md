@@ -59,9 +59,9 @@ In the Inbound rules section, click on Add Rule and enter the following values:
 
     Field	                Value
     Type	                Custom TCP Rule
-    Protocol	            TCP
-    Port range	            5439 The default port for Amazon Redshift is 5439, but your port might be different.
-    Source type	            Custom
+    Protocol	        TCP
+    Port range	        5439 The default port for Amazon Redshift is 5439, but your port might be different.
+    Source type	        Custom
     Source	                0.0.0.0/0 (Anywhere in the world)
 
 Outbound rules allow traffic to anywhere by default.
@@ -81,7 +81,7 @@ Provide a unique identifier, such as redshift-cluster-1, and choose the Free tri
         Field	                    Value
         Database name	            dev
         Database port	            5439
-        Master user name	        awsuser
+        Master user name	    awsuser
         Master user password	    Enter a password of your choice
 
 - Cluster permissions (optional)
@@ -99,9 +99,9 @@ Toggle the button to turn off the "use defaults" feature, and expand the Network
 
     Cluster subnet group	            Choose the default
                                         It is the one you have just created.
-    Availability Zone	                No preference
+    Availability Zone	            No preference
     Enhanced VPC routing	            Disabled
-    Publicly accessible	                Enable
+    Publicly accessible	            Enable
 
 Leave the rest of the values as default.
 click on the Create cluster button at the bottom.
